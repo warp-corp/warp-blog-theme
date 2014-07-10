@@ -10,11 +10,42 @@
   #container {
 		width: 100%;
   }
+
+  #logo {
+  	padding: 1em;
+  	text-align: center;
+  }
+
+  #logo h1 {
+  	font-size: 1.5em !important;
+  }
+
+  #menu {
+  	border-radius: 0 0 0 0;
+  }
+
+  #menu li#wrap-search input[type="text"] {
+  	display: block !important;
+  	border-radius: 0 !important;
+  }
+
+  #menu li#wrap-search:before {
+  	display: none;
+  }
+
+  .thumb,
+  .hide-phone {
+  	display: none;
+  }
+
 }
  
 @media only screen and (max-width : 720px) {
 	#container {
 		width: 100%;
+  }
+  #menu {
+  	border-radius: 0 0 0 0;
   }
 }
  
@@ -22,10 +53,16 @@
 	#container {
 		width: 100%;
   }
+  #menu {
+  	border-radius: 0 0 0 0;
+  }
 }
  
 @media only screen and (max-width : 320px) {
 	#container {
 		width: 100%;
+  }
+ #menu {
+  	border-radius: 0 0 0 0;
   }
 }

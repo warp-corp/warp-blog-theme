@@ -12,6 +12,7 @@
 		<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 
 		<link href='http://fonts.googleapis.com/css?family=Black+Ops+One' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Allerta+Stencil' rel='stylesheet' type='text/css'>
 
 		<?php wp_head(); ?>
 	</head>
