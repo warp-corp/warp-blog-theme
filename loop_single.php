@@ -26,6 +26,21 @@
         </div>
       </div> 
     </div>
+    <div class="post-navigation">
+      <section class="autogrid2">
+        <aside>
+          <p class="txtleft">
+            <?php previous_post('%', '<span class="muted">Article précédent</span>', 'yes'); ?>
+          </p>
+        </aside>
+        <aside>
+          <p class="txtright">
+
+            <?php next_post('%', '<span class="muted">Article suivant</span>', 'yes'); ?>
+          </p>
+        </aside>
+      </section>
+    </div>
     <div id="comments">
     <?php comments_template(); ?>
     <?php comment_form(); ?>

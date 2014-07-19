@@ -10,6 +10,11 @@ if ( function_exists('register_sidebar') )
 		'after_title' => '</h4>',
 	));
 
+register_nav_menus( array(
+    'Top' => 'Navigation principale',
+	)
+);
+
 function my_custom_comments($comment, $args, $depth) { 
    $GLOBALS['comment'] = $comment; ?>
    <div <?php comment_class(); ?> id="comment-<?php comment_ID() ?>">
@@ -32,3 +37,4 @@ function my_custom_comments($comment, $args, $depth) {
    <?php endif; ?>
    </div>
 <?php } ?>
+

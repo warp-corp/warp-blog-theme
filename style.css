@@ -35,6 +35,29 @@ body {
 	color: #d8d8d8;
 }
 
+.menu-principal-container {
+	float: left;
+	background: #191919;
+	border-bottom: solid 2px #B52831;
+	overflow: hidden;
+	position: relative;
+	height: 50px;
+	margin: 0;
+	padding: 0;
+}
+
+.menu-principal-container a {
+	display: inline-block;
+	line-height: 50px;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+#menu-principal {
+	padding: 0;
+	margin: 0;
+}
+
 #menu {
 	background: #191919;
 	border-bottom: solid 2px #B52831;
@@ -86,7 +109,8 @@ body {
 	box-shadow: 0 0 5px rgba(0,0,0,.1) inset;
 }
 
-#menu li a {
+#menu li a,
+.menu-principal-container a {
 	text-decoration: none;
 	color: #fff;
 	display: inline-block;
@@ -94,11 +118,13 @@ body {
 
 }
 
-#menu li a:hover {
+#menu li a:hover,
+.menu-principal-container a:hover {
 	background: rgba(120,120,120,.1);
 }
 
-#menu li.active a {
+#menu li.active a,
+.menu-principal-container li.current-menu-item a {
 	background: #B52831;
 }
 
@@ -218,6 +244,26 @@ body {
 	color: #fff;
 }
 
+.post-navigation {
+	margin-top: .5em;
+	margin-bottom: .5em;
+	padding-bottom: .5em;
+	border-bottom: dashed 1px #c4c5c6;
+}
+
+.post-navigation span {
+	display: block;
+	color: #a7a8a9;
+	font-size: .95em;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.post-navigation a {
+	text-decoration: none;
+	font-family: 'Ubuntu', sans-serif;
+	color: #0099FF;
+}
+
 #comments {
 	margin-top: 2em;
 }
@@ -306,6 +352,13 @@ p.logged-in-as a {
 	border: none;
 	background: #B52831;
 	color: #fff;
+}
+
+/**
+ * Sidebar
+ */
+#sidebar {
+	
 }
 
 #footer {

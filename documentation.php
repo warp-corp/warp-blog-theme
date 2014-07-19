@@ -1,12 +1,17 @@
+<?php
+/*
+Template Name: Page
+*/
+?>
 <?php get_header(); ?>
 
 <section id="page">
 <section class="grid">
 	<section class="grid2-1">
 		<aside>
-			<?php get_template_part('loop'); ?>
+			<?php get_template_part('loop_page'); ?>
 		</aside>
-		<aside id="sidebar">
+		<aside>
 			<?php get_sidebar(); ?>
 		</aside>
 	</section>

@@ -32,16 +32,8 @@
 	
 			<!-- main menu -->
 			<nav id="menu" role="navigation">
+				<?php wp_nav_menu( array( 'theme_location' => 'Top' ) ); ?>
 				<ul class="unstyled man pan">
-					<li class="inbl <?php echo is_home() ? 'active' : '' ; ?>">
-						<a href="" class="pas"><i class="fa fa-home fa-fw"></i></a>
-					</li>
-					<li class="inbl">
-						<a href="" class="pas">Doc</a>
-					</li>
-					<li class="inbl">
-						<a href="" class="pas">API</a>
-					</li>
 					<li class="inbl" id="wrap-search">
 						<?php get_search_form(); ?>
 					</li>
