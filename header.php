@@ -4,7 +4,16 @@
 		<meta charset="<?php bloginfo('charset'); ?>">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		
-		<title><?php the_title(); ?></title>
+		<title><?php
+		 if ( is_search() ) :
+		 echo 'Résultats de recherche pour "'.get_search_query().'" | ';
+		 
+		 else :
+		 wp_title('|', true, 'right');
+		 endif;
+
+		 bloginfo('name'); 
+		?></title>
 
 		<link rel="stylesheet" href=" <?php echo get_template_directory_uri(); ?>/css/knacss.css">
 		<link rel="stylesheet" href=" <?php echo get_template_directory_uri(); ?>/css/responsive.css">
