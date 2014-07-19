@@ -128,6 +128,13 @@ body {
 	background: #B52831;
 }
 
+#edito {
+	padding: 1.5em;
+	margin-bottom: 1em;
+	background: #34495E;
+	border: solid 5px #2C3E50;
+}
+
 .post {
 	position: relative;
 	padding-bottom: .5em;
