@@ -11,7 +11,15 @@
       <div class="post-content">
       	<section class="grid">
       		<section class="grid1-3">
-      			<aside><div class="thumb"><?php the_post_thumbnail('thumbnail'); ?></div></aside>
+      			<aside>
+              <div class="thumb">
+              <?php if (has_post_thumbnail()) : ?>
+                <?php the_post_thumbnail('thumbnail'); ?>
+              <?php else : ?>
+                <img src="<?php echo get_template_directory_uri(); ?>/img/no-thumb.png" alt="">
+              <?php endif; ?>
+              </div>
+            </aside>
       			<aside>
       				 <h3 class="post-title">
 				        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
