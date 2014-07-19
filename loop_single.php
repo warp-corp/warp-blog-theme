@@ -26,6 +26,10 @@
         </div>
       </div> 
     </div>
+    <div id="comments">
+    <?php comments_template(); ?>
+    <?php comment_form(); ?>
+    </div>
   <?php endwhile; ?>
 <?php endif; ?>
 <!-- /the post -->

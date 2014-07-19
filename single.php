@@ -7,7 +7,7 @@
 			<?php get_template_part('loop_single'); ?>
 		</aside>
 		<aside>
-			
+			<?php get_sidebar(); ?>
 		</aside>
 	</section>
 </section>
