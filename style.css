@@ -10,7 +10,7 @@ License URI:
 */
 
 body {
-	background: url('img/bg_body.jpg') no-repeat;
+	background: url('img/bg_body.jpg') no-repeat #000;
 }
 
 #container {
