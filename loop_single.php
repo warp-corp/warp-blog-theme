@@ -10,7 +10,7 @@
   <?php while (have_posts()) : the_post(); ?>
     <div class="post">
       <div class="post-content">
-				<h3 class="post-title">
+				<h3 class="post-title single">
 	        <?php the_title(); ?>
 	      </h3>
         <ul class="unstyled man pan post-info">
