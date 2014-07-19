@@ -218,6 +218,96 @@ body {
 	color: #fff;
 }
 
+#comments {
+	margin-top: 2em;
+}
+
+.comments-title {
+	font-family: 'Ubuntu', sans-serif;
+	color: #424242;
+}
+
+.comment {
+	margin-bottom: 1.5em;
+	overflow: hidden;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.comment .wrap-avatar {
+	border-radius: 5px;
+	padding: .25em;
+	background: #fff;
+	overflow: hidden;
+}
+
+.comment .avatar {
+	border-radius: 5px;
+}
+
+.comment-body {
+	color: #a7a8a9;
+}
+
+.muted {
+	color: #d7d8d9;
+}
+
+.comment-body a {
+	text-decoration: none;
+	color: #B52831;
+}
+
+#respond {
+	margin-bottom: 1.5em;
+	overflow: hidden;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+h3#reply-title {
+	font-weight: normal;
+	line-height: 1;
+	margin: 0; padding: 0;
+}
+
+p.logged-in-as,
+p.form-allowed-tags,
+p.form-allowed-tags code,
+p.comment-notes {
+	color: #848586;
+	font-size: .95em;
+}
+
+p.logged-in-as a {
+	color: #B52831;
+	text-decoration: none;
+}
+
+#commentform label {
+	display: block;
+	line-height: 1.2;
+}
+
+#commentform textarea, 
+#commentform input[type="text"] {
+	max-width: 100%;
+	width: 100%;
+	border: solid 1px #c4c5c6;
+	margin-top: 0;
+	padding: .5em;
+}
+
+#commentform textarea:focus, 
+#commentform input[type="text"]:focus {
+	border: solid 1px #B52831;
+}
+
+#commentform input[type="submit"] {
+	padding: 1em 2em;
+	border: none;
+	background: #B52831;
+	color: #fff;
+}
+
 #footer {
 	background: #000;
 	min-height: 120px;
