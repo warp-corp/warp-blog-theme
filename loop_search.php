@@ -7,7 +7,7 @@
 
 <?php if (have_posts()) : ?>
   <?php while (have_posts()) : the_post(); ?>
-    <?php if (get_post_type( get_the_ID() ) == "post") : ?>
+    <?php if (get_post_type( get_the_ID() ) == "post" AND !in_category('Édito')) : ?>
     <div class="post">
       <div class="post-content">
         <section class="grid">
